@@ -10,6 +10,7 @@ public class GridPanel extends Pane{
     public final int rowIndex;
     private Image image;
     private Piece piece;
+    private boolean hasPiece = false;
     private boolean isBlack;
 
     public GridPanel(int col, int row, boolean isBlack){
@@ -22,11 +23,9 @@ public class GridPanel extends Pane{
             this.setStyle("-fx-background-color: #FFFFFF");
         }
 
-
-
     }
 
-    public void setImage(){
+    private void setImage(){
         image = piece.getImage();
     }
 
@@ -37,6 +36,14 @@ public class GridPanel extends Pane{
 
     public Piece getPiece(){
         return piece;
+    }
+
+    public boolean hasPiece(){
+        return hasPiece;
+    }
+
+    public void sethasPiece(boolean b){
+        hasPiece = b;
     }
 
 

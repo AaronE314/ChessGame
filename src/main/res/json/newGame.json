@@ -1,0 +1,8 @@
+{"White":[
+  {"7":["Rook" , "Knight", "Bishop", "Queen", "King", "Bishop", "Knight", "Rook"]},
+  {"6":["Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn"]}
+],
+"Black":[
+  {"0":["Rook" , "Knight", "Bishop", "Queen", "King", "Bishop", "Knight", "Rook"]},
+  {"1":["Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn"]}
+]}

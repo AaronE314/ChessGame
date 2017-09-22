@@ -2,6 +2,7 @@ package main.piece;
 
 
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import main.gui.GridPanel;
 
 public class Piece {
@@ -10,6 +11,7 @@ public class Piece {
     protected GridPanel ipos, pos;
     protected Image image;
     protected boolean isBlack;
+    protected ImageView imageView;
 
     public Piece(GridPanel pos, Image image, GridPanel[] movement, boolean isBlack) {
         this.movement = movement;
@@ -26,11 +28,5 @@ public class Piece {
     public Image getImage(){
         return image;
     }
-
-    private GridPanel[] CalculateMovement(){
-        return null;
-    }
-
-
 
 }

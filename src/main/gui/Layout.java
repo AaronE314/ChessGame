@@ -5,14 +5,13 @@ import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.*;
-import main.piece.Piece;
 
 public class Layout extends Parent {
 
     private BorderPane layout;
     private GridPane grid;
     private MenuBar menuBar;
-    public GridPanel[][] gridPanels;
+    private GridPanel[][] gridPanels;
     private boolean b = false;
     private int count = 0;
 
@@ -91,6 +90,10 @@ public class Layout extends Parent {
 
     public BorderPane getLayout() {
         return layout;
+    }
+
+    public GridPanel[][] getGrid(){
+        return gridPanels;
     }
 
 }
