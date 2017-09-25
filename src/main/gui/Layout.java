@@ -1,10 +1,13 @@
 package main.gui;
 
+import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.*;
+
 
 public class Layout extends Parent {
 
@@ -23,6 +26,8 @@ public class Layout extends Parent {
         gridPanels = new GridPanel[8][8];
 
         grid.setGridLinesVisible(true);
+
+        grid.setAlignment(Pos.CENTER);
 
         setUpGrid();
         setUpMenu();
@@ -76,6 +81,7 @@ public class Layout extends Parent {
     }
 
     private void addPane(int colIndex, int rowIndex) {
+
         GridPanel pane = new GridPanel(colIndex,rowIndex, b);
         if(count != 7) {
             b = !b;
@@ -94,6 +100,14 @@ public class Layout extends Parent {
 
     public GridPanel[][] getGrid(){
         return gridPanels;
+    }
+
+    public void addToGrid(Node node, int col, int row){
+        grid.add(node, col, row);
+    }
+
+    public GridPane getGridView(){
+        return grid;
     }
 
 }

@@ -1,10 +1,10 @@
 package main.gui;
 
 import javafx.scene.image.Image;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import main.piece.Piece;
 
-public class GridPanel extends Pane{
+public class GridPanel extends StackPane{
 
     public final int colIndex;
     public final int rowIndex;
@@ -32,6 +32,10 @@ public class GridPanel extends Pane{
     public void setPiece(Piece p){
         piece = p;
         setImage();
+        hasPiece = true;
+
+        //this.setVisible(false);
+
     }
 
     public Piece getPiece(){

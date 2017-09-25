@@ -11,7 +11,7 @@ public class Main extends Application {
 
     public static GridPanel[][] mainGrid;
 
-    Layout layout;
+    public static Layout layout;
 
     public static void main(String[] args) {
         launch(args);
